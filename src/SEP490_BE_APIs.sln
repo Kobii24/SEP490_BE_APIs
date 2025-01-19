@@ -3,8 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7BCFA0FA-3E10-4E90-9158-7EF40A2815A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{DA3EEC32-4820-48D2-9677-F7CD68A1C44A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{4F2EE33D-7862-4F60-8153-0102D9B86F98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "..\src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{F954EDF3-DD71-432E-8F1B-5CEB31F04B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.API", "..\src\Services\Account\Account.API\Account.API.csproj", "{64C1AB97-D567-47FE-B14A-6D6316DBB097}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F954EDF3-DD71-432E-8F1B-5CEB31F04B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F954EDF3-DD71-432E-8F1B-5CEB31F04B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F954EDF3-DD71-432E-8F1B-5CEB31F04B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F954EDF3-DD71-432E-8F1B-5CEB31F04B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C1AB97-D567-47FE-B14A-6D6316DBB097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C1AB97-D567-47FE-B14A-6D6316DBB097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C1AB97-D567-47FE-B14A-6D6316DBB097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C1AB97-D567-47FE-B14A-6D6316DBB097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA3EEC32-4820-48D2-9677-F7CD68A1C44A} = {7BCFA0FA-3E10-4E90-9158-7EF40A2815A5}
+		{F954EDF3-DD71-432E-8F1B-5CEB31F04B37} = {4F2EE33D-7862-4F60-8153-0102D9B86F98}
+		{64C1AB97-D567-47FE-B14A-6D6316DBB097} = {DA3EEC32-4820-48D2-9677-F7CD68A1C44A}
 	EndGlobalSection
 EndGlobal
